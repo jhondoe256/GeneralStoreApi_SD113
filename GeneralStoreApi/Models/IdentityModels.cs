@@ -1,5 +1,7 @@
-﻿using System.Security.Claims;
+﻿using System.Data.Entity;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using GeneralStoreApi.Models.Entities;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
@@ -29,5 +31,8 @@ namespace GeneralStoreApi.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Customer> Customers{ get; set; }
+        public DbSet<Product> Products{ get; set; }
+        public DbSet<Transaction> Transactions{ get; set; }
     }
 }

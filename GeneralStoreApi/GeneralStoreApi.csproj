@@ -206,6 +206,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GeneralStoreControllers\CustomerController.cs" />
+    <Compile Include="Controllers\GeneralStoreControllers\ProductController.cs" />
+    <Compile Include="Controllers\GeneralStoreControllers\TransactionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -214,6 +217,10 @@
     <Compile Include="Migrations\202111241907324_INitMigration.cs" />
     <Compile Include="Migrations\202111241907324_INitMigration.Designer.cs">
       <DependentUpon>202111241907324_INitMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111241916291_secondMigration.cs" />
+    <Compile Include="Migrations\202111241916291_secondMigration.Designer.cs">
+      <DependentUpon>202111241916291_secondMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -318,6 +325,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202111241907324_INitMigration.resx">
       <DependentUpon>202111241907324_INitMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111241916291_secondMigration.resx">
+      <DependentUpon>202111241916291_secondMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
